@@ -31,7 +31,7 @@ def predict():
 	ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
 	# initialize
-	cap = cv2.VideoCapture(0)
+	cap = cv2.VideoCapture("rtsp://192.168.43.75:8080/h264_ulaw.sdp")
 	frame_count = 0
 	start = time.time()
 	first = True
